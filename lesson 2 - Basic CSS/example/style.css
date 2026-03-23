@@ -1,0 +1,61 @@
+html{
+    font-size: 20px; /* 1rem = 20px */
+}
+
+body {
+    background-color: azure;
+}
+
+p {
+    font-size: 1.5rem; /* font-size = 20px * 1.5 = 30px */
+}
+
+li {
+    color: red;
+}
+
+.list-item {
+    color: purple;
+}
+
+.list-item:hover {
+    font-size: 22px;
+    font-style: italic;
+}
+
+h2 {
+    text-decoration: underline;
+    background-color: cornsilk;
+}
+
+#langs {
+    background-color: yellow;
+}
+
+#profile-img {
+    width: 50%;
+    aspect-ratio: 1/1;
+    /* היחס בין הרוחב לגובה */
+    border-radius: 50%;
+}
+
+.btn {
+    font-size: 40px;
+    background-color: bisque;
+    color: #2055da;
+    border: none;
+    box-shadow: 0px 2px 5px #888;
+}
+
+.btn:hover {
+    box-shadow: inset 0px 2px 5px #888;
+    cursor: pointer;
+}
+
+.btn:not(#bye){
+    color:red;
+}
+
+p:hover{
+    color:rgba(126, 202, 206, 0.9);
+}
