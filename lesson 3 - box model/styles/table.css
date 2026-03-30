@@ -1,0 +1,20 @@
+html{
+    font-size: 14px; /* 1rem = 14px */
+}
+
+table,
+tr,
+td,
+th {
+  border: 0.2rem solid black; 
+  border-collapse: collapse; 
+  text-align: center;
+}
+
+th, td{
+    padding:0 1rem;
+}
+
+table{
+    margin: 2rem auto;
+}
