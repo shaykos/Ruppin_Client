@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מודל הקופסה וגבולות בטבלאות</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>שיעור: מודל הקופסה וגבולות בטבלאות ב־CSS</h1>
+    <p class="lead">
+      כל אלמנט ב־HTML הוא קופסה. מודל הקופסה מורכב מ־<strong>תוכן</strong>,
+      <strong>ריווח פנימי (padding)</strong>, <strong>גבול (border)</strong> ו־<strong>ריווח חיצוני (margin)</strong>.
+    </p>
+
+    <h2>1) דוגמה ויזואלית למודל הקופסה</h2>
+    <section class="box-model-demo">
+      <div class="content-box">זהו אזור התוכן</div>
+      <p>
+        בדוגמה הזו: האזור האפור הוא הקופסה החיצונית, הקו הכחול הוא הגבול,
+        והמרווח שבתוכה הוא הריווח הפנימי (padding). לקופסה הצהובה הפנימית יש
+        גבול מקווקו, ריווח פנימי וריווח חיצוני משלה.
+      </p>
+    </section>
+
+    <div class="explain">
+      <article class="card"><strong>תוכן:</strong> הטקסט או התמונה עצמם.</article>
+      <article class="card"><strong>Padding:</strong> המרווח בין התוכן לגבול.</article>
+      <article class="card"><strong>Border:</strong> הקו שמקיף את התוכן והריווח הפנימי.</article>
+      <article class="card"><strong>Margin:</strong> המרווח מחוץ לגבול.</article>
+    </div>
+
+    <h2>2) דוגמאות תמונה עם גבולות</h2>
+    <section class="gallery">
+      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=900&q=80" alt="עמדת קוד" />
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="מחשב נייד ומחברת" />
+      <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="קוד על המסך" />
+    </section>
+
+    <h2>3) הדגמת גבולות בטבלה (separate לעומת collapse)</h2>
+    <p><strong>א.</strong> גבולות עם רווח בין תאים (<code>border-collapse: separate</code>):</p>
+    <table class="separate-borders">
+      <thead>
+        <tr>
+          <th>סטודנט/ית</th>
+          <th>HTML</th>
+          <th>CSS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>דנה</td>
+          <td>90</td>
+          <td>95</td>
+        </tr>
+        <tr>
+          <td>יוסי</td>
+          <td>85</td>
+          <td>89</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>ב.</strong> גבול משותף יחיד בין תאים (<code>border-collapse: collapse</code>):</p>
+    <table class="collapsed-borders">
+      <thead>
+        <tr>
+          <th>סטודנט/ית</th>
+          <th>HTML</th>
+          <th>CSS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>דנה</td>
+          <td>90</td>
+          <td>95</td>
+        </tr>
+        <tr>
+          <td>יוסי</td>
+          <td>85</td>
+          <td>89</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="note">
+      טיפ לשיעור: נא לפתוח DevTools, לבחור אלמנט,
+      ולזהות בזמן אמת את ה־content, ה־padding, ה־border וה־margin.
+    </p>
+  </main>
+</body>
+</html>
