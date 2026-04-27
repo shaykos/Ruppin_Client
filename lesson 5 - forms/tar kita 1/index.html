@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פתרון תרגיל כיתה</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl">
+    <form action="" class="row">
+        <h1>טופס הזמנת פריטים</h1>
+        <label for="name" class="row">
+            <span>הכנס את שמך</span>
+            <input type="text" name="firstName" id="name">
+        </label>
+        <label for="pass" class="row">
+            <span>סיסמה</span>
+            <input type="password" name="pass" id="pass">
+        </label>
+        <label for="items" class="row">
+            <span>מספר פריטים שברצונך להזמין</span>
+            <select name="items" id="items">
+                <option value="-1" disabled selected>בחר כמות</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </label>
+        <label for="confirm">
+            <input type="checkbox" name="confirm" id="confirm">
+            <span>אני מאשר שכל הפרטים נכונים</span>
+        </label>
+        <label for="delivery">
+            <span>סוג משלוח:</span>
+            <div class="row">
+                <span><input type="radio" name="delivery"  value="r" checked>רגיל</span>
+                <span><input type="radio" name="delivery"  value="m">רשום</span>
+                <span><input type="radio" name="delivery"  value="f">מהיר</span>
+            </div>
+        </label>
+        <label for="notes" class="row">
+            <span>הערות</span>
+            <textarea name="notes" id="notes" rows="2"></textarea>
+        </label>
+        <button type="submit">שלח טופס</button>
+    </form>
+</body>
+</html>
