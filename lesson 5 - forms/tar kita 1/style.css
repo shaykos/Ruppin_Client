@@ -1,8 +1,11 @@
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+    font-family: "Gveret Levin", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2rem;
 }
 
-html{
+html {
     font-size: 14px;
 }
 
@@ -17,7 +20,8 @@ form {
     gap: 20px;
     font-size: 1.2rem;
 
-    input, select{
+    input,
+    select {
         font-size: 1.2rem;
     }
 
@@ -25,14 +29,14 @@ form {
         margin: 0;
     }
 
-    button{
+    button {
         background-color: rgb(2, 126, 209);
         width: fit-content;
         font-size: 1.2rem;
-        border:none;
-        outline:none;
+        border: none;
+        outline: none;
         padding: 12px;
         border-radius: 5px;
-        color:#fff;
+        color: #fff;
     }
 }
