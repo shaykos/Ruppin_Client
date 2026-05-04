@@ -1,0 +1,29 @@
+@media (width >= 800px) {
+    #main-header {
+        height: clamp(var(--header-height), 10vh, calc(var(--header-height) * 2));
+
+        label {
+            display: none;
+        }
+
+        nav {
+            display: initial;
+
+            ul {
+                display: grid;
+                grid-template-columns: repeat(4, auto);
+                gap: var(--space-lg);
+
+                li {
+                    text-align: center;
+                }
+            }
+        }
+
+        img {
+            width: 30%;
+            height: auto;
+            margin-inline: auto;
+        }
+    }
+}
