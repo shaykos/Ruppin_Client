@@ -66,3 +66,25 @@ console.log('pricesWithVAT --> ', pricesWithVAT);
 console.log(pricesWithVAT[pricesWithVAT.length - 1]);
 console.log(pricesWithVAT.at(-1));
 console.log(pricesWithVAT.at(-2));
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+numbers.sort();
+console.log('SORT');
+console.log('numbers after sort --> ', numbers);
+numbers.sort((a, b) => a - b); // בסדר עולה
+console.log('numbers after sort2 --> ', numbers);
+numbers.sort((a, b) => b - a); // סדר ירד
+console.log('numbers after sort3 --> ', numbers);
+
+let sum = numbers.reduce((total, current) => { return total + current }, 0);
+console.log("sum --> ", sum);
+
+/*
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+    let total = 0;
+    for(let i = 0; i < numbers.length; i++){
+        let current = numbers[i];
+        total += current;
+    }
+*/
+
