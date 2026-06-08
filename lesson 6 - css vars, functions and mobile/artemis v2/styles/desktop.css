@@ -1,0 +1,28 @@
+@media (width >= 1200px) {
+    #hero {
+        height: 90vh;
+    }
+
+    #content {
+        padding: var(--space-2xl) var(--space-xl);
+        gap: var(--space-2xl);
+    }
+
+    aside {
+        width: 28%;
+    }
+
+    aside li a h4 {
+        font-size: var(--font-size-lg);
+    }
+
+    main article {
+        h1 {
+            font-size: clamp(3rem, 5vw, 5rem);
+        }
+
+        img {
+            border-radius: var(--radius-lg);
+        }
+    }
+}
