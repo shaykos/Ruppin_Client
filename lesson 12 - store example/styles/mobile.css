@@ -1,0 +1,48 @@
+@media (max-width: 1024px) {
+    body {
+        padding: 1.25rem;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .hero {
+        padding: 1.3rem;
+    }
+
+    .panel {
+        padding: 1rem;
+    }
+
+    .content-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .panel:first-child {
+        order: 1;
+    }
+
+    .panel:last-child {
+        order: 2;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .button-row {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}

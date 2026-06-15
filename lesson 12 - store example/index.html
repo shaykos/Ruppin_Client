@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Store</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="module" src="./scripts/main.js"></script>
+</head>
+
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <span class="eyebrow">Soft & modern</span>
+            <h1>Products list</h1>
+            <p>Manage your little store in a calm, pastel space designed for both desktop and mobile.</p>
+        </header>
+
+        <main class="content-grid">
+            <section class="panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>Current products</h2>
+                        <p>Beautiful cards with a clean layout.</p>
+                    </div>
+                </div>
+                <div id="all_products" class="products-grid"></div>
+            </section>
+
+            <section class="panel">
+                <div class="panel-heading">
+                    <div>
+                        <h2>Add a new product</h2>
+                        <p>Fill in the details and save it instantly.</p>
+                    </div>
+                </div>
+                <form id="new_product_form" class="product-form">
+                    <div class="field-group">
+                        <label for="name">Product name</label>
+                        <input id="name" type="text" placeholder="e.g. Lavender candle">
+                    </div>
+                    <div class="field-group"> 
+                        <label for="price">Price</label>
+                        <input id="price" type="text" placeholder="e.g. 49">
+                    </div>
+                    <div class="field-group">
+                        <label for="category">Category</label>
+                        <input id="category" type="text" placeholder="e.g. Decor">
+                    </div>
+                    <div class="button-row">
+                        <button type="submit" id="form_submit">Add</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+:root {
+    --bg: #f8f5ff;
+    --panel: #ffffff;
+    --accent: #8ba9db;
+    --accent-2: #f5c7d8;
+    --accent-3: #bfe4d2;
+    --text: #3e3a57;
+    --muted: #7b7590;
+    --border: rgba(92, 79, 128, 0.14);
+    --shadow: 0 18px 40px rgba(99, 88, 140, 0.12);
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(circle at top left, rgba(245, 199, 216, 0.35), transparent 28%),
+        linear-gradient(135deg, #fefcff 0%, #f4f8ff 100%);
+    padding: 2rem;
+}
+
+.page-shell {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.84));
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    padding: 2rem 2.2rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(139, 169, 219, 0.18);
+    color: #5673a4;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: clamp(1.7rem, 2.2vw, 2.3rem);
+    margin-bottom: 0.4rem;
+}
+
+.hero p {
+    color: var(--muted);
+    max-width: 680px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 1.4rem;
+    box-shadow: var(--shadow);
+}
+
+.panel h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.panel-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.panel-heading p {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.product_card {
+    background: linear-gradient(145deg, #ffffff, #fcf6ff);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 1rem;
+    min-height: 120px;
+    box-shadow: 0 10px 24px rgba(138, 124, 171, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product_card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(138, 124, 171, 0.18);
+}
+
+.product_card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+    color: #5b5272;
+}
+
+.product_card p {
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.product_card p:last-child {
+    margin-top: 0.35rem;
+    font-weight: 700;
+    color: #6f6aa0;
+}
+
+#all_products:empty::before {
+    content: "No products yet. Add your first item.";
+    display: block;
+    padding: 1rem;
+    border: 1px dashed var(--border);
+    border-radius: 16px;
+    color: var(--muted);
+    background: #faf9ff;
+}
+
+.product-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.field-group {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.field-group label {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.field-group input {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 0.8rem 0.95rem;
+    background: #fcfbff;
+    color: var(--text);
+}
+
+.field-group input:focus {
+    outline: 2px solid rgba(139, 169, 219, 0.35);
+    border-color: var(--accent);
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+button {
+    border: none;
+    border-radius: 999px;
+    padding: 0.8rem 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+.product_card button {
+    margin-top: 0.75rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: #f7e9f5;
+    color: #8c6a93;
+    box-shadow: 0 6px 14px rgba(138, 124, 171, 0.14);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.product_card button::before {
+    content: "✎";
+}
+
+.product_card button:hover {
+    background: #f0ddec;
+}
+
+button[type="submit"] {
+    background: linear-gradient(135deg, var(--accent), #6d8cc9);
+    color: white;
+    box-shadow: 0 10px 24px rgba(109, 140, 201, 0.24);
+}
+
+button[type="reset"] {
+    background: #f4e8f5;
+    color: #7a5e86;
+}
